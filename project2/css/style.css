@@ -1,0 +1,536 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;0,500;1,400&family=Vidaloka&display=swap');
+
+
+* {
+    position: relative;
+    box-sizing: border-box;
+
+
+}
+body {
+    
+    font-family: 'Roboto',"sans-serif";
+    font-weight:400;
+    font-size:1rem;
+ 
+    color:#09363f;
+}
+.container {
+    margin: 10px;
+    padding: .5rem;
+    background-image: radial-gradient(#eccdbe, #eec5c7);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height:100%;
+
+}
+
+   header {
+
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(#d8a4a4 30%, #af8281 70%);
+    position: relative;
+
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+    margin: 2.5rem;
+    padding: .2rem;
+    justify-content: left;
+
+}
+
+.logo {
+    display: block;
+    justify-content: flex-start;
+    margin: 2px;
+    padding: 10px;
+    color: hsl(0, 33%, 14%);
+}
+
+
+nav a {
+
+    text-decoration: none;
+    margin: .5rem;
+    color: hsl(0, 33%, 14%);
+}
+
+nav li {
+    display: inline-flex;
+    padding: 0;
+    
+
+}
+
+#wrapper {
+
+    z-index: 100;
+}
+
+#wrapper:hover {
+    opacity: 0.7;
+}
+
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    padding-bottom: 2rem, ;
+    height: 90vh;
+    width: 100%;
+    
+    color:#09363f;
+
+
+}
+
+
+
+.title {
+    display: grid;
+    padding-left: 1rem;
+    grid-column: 1/-1;
+    grid-row: 1;
+    font-family: "Vidaloka", "Sans-erif";
+    font-weight: 400;
+    font-size: 10vw;
+    width: 100%;
+    z-index: 2;
+}
+
+.inner-title {
+    display: inline-block;
+
+}
+
+.button{
+    margin:auto;
+    text-align:center;
+    width: 150px;
+    height: 40px;
+    font-size:1rem;
+    color:hsl(0, 33%, 14%);
+    
+    background-color:transparent;
+    border:3px solid #af8281 ;
+    border-radius: 10px;
+}
+ .button a {
+     color:hsl(0, 33%, 14%);
+     text-decoration: none;
+     text-justify: auto;
+     padding:5px;
+
+ }
+
+@keyframes text-clip {
+
+    from {
+
+        clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+
+    to {
+
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+}
+
+@keyframes outer-left {
+
+    from {
+        
+        transform: translate(60%);
+       
+    }
+
+    to {
+        transform: none;
+
+    }
+
+}
+
+
+@keyframes inner-left {
+
+    from {
+        transform: translate(-60%);
+      
+    }
+
+    to {
+        transform: none;
+
+    }
+
+}
+
+.firstname,
+.lastname {
+
+    animation: outer-left 1s 1s cubic-bezier(.5, 1, 0.1, 1) both;
+
+}
+
+.inner-title {
+    display: inline-block;
+
+    animation: inner-left 1s 1s ease both;
+}
+
+.firstname-inner {
+    display: inline-block;
+
+    animation: inner-left 1s 1s ease both,
+        text-clip 1s 1s cubic-bezier(.5, 1, 0.1, 1) both;
+
+
+}
+
+.lastname-inner {
+
+    animation: text-clip 1s 1s cubic-bezier(.5, 0, 0.1, 1) both;
+
+}
+
+.title {
+
+    animation: outer-left 1s 1s ease both;
+}
+
+
+
+.firstname, .firstname-inner {
+
+    display: inline-block;
+}
+
+
+.lastname {
+
+    display: inline-block;
+}
+
+.img-specs , .hero-image{
+
+    width: 75%;
+    max-width: 90%;
+    height: 50vh;
+    padding:2rem;
+    animation: image-in 1s 1s backwards;
+    transform: translateX(10%);
+}
+
+/*.hero-image {
+
+    max-width: 45vmax;
+    display: grid;
+    grid-row: 1;
+    grid-column: 2;
+    
+    padding-right: 1rem;
+
+    animation: image-in 1s 2s backwards;
+    transform: translateX(50%);
+
+
+
+}*/
+
+@keyframes image-in {
+
+    from {
+        clip-path: polygon(0% 0%, 100% 0%,100% 0%, 0% 0%);
+    }
+
+    to {
+
+        clip-path: polygon(0% 0%, 100% 0% , 100% 100%, 0% 100%);
+    }
+}
+footer{
+    display:flex;
+    justify-content: space-evenly;
+    position:relative;
+    margin-top:50px;
+    margin-bottom: 10px;
+    /*background-color:#002a32 ;*/
+    background-color: #df6743;
+    color:#ffe3d6;
+}
+
+
+/*@media screen and (min-width:650px){
+
+    body{
+
+        font-size:2rem;
+    }
+
+    .parent{
+        display: block;
+        justify-content: space-evenly;
+    }
+
+    main {   
+        display: block;
+        max-width:90vw;
+
+    }
+    .firstname, .firstname-inner, .lastname, .lastname-inner{
+
+        display: block;
+    }*/
+
+ 
+
+@media screen and (min-width:650px){
+
+    main {   
+        display: inline-block;
+
+    }
+    body, nav , header{
+        font-size:1vw;
+    }
+    
+   
+  img {
+      float:left;
+      max-width:30%;
+      max-height:60vh;
+      height:100%;
+  }
+  
+  .img-specs , .hero-image{
+
+    width: 75%;
+    max-width:70vw;
+    height: 50vh;
+    padding:2rem;
+    animation: image-in 1s 1s backwards;
+    transform: translateX(10%);
+}
+
+                 
+
+ 
+} 
+2
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;0,500;1,400&family=Vidaloka&display=swap');
+
+
+*{
+    box-sizing:border-box;
+}
+/* -Style sheet for home and About oage-*/
+
+/*body{
+
+    font-family: 'roboto',sans-serif;
+    font-weight;400;
+    font-size;24px;
+    
+    color:#09363f;
+}
+    
+   .container {
+    margin:10px;
+    padding:.5rem;
+    background-image:radial-gradient(#eccdbe, #eec5c7);
+    background-repeat: no-repeat; 
+    background-position:center;
+    background-size:cover;  
+    max-height:100%;
+    
+   } 
+
+header{
+   margin:0;
+   width:100%;
+    display:flex;
+    justify-content: space-between;
+   background-image:linear-gradient( #d8a4a4 30%,#af8281 70%);
+    position:relative;
+
+}
+
+
+   nav ul{
+       display:inline-flex;
+       list-style: none;
+       margin:2.5rem;
+       padding:.2rem; 
+       justify-content: left;
+       
+   }
+   .logo{
+       display:block;
+       justify-content:flex-start;
+       margin:2px;
+       color:hsl(0, 33%, 14%);
+   }
+
+   nav a { 
+    font-family:'roboto condensed','san-serif' ;
+    font-weight:400;
+    font-size:36px;
+    text-decoration:none;
+    margin:1rem;
+    color:hsl(0, 33%, 14%);
+    margin-right: 5px;
+   }
+
+
+   nav li{
+    display:inline-flex;
+    padding:0;
+    
+       
+   }
+   .hero1{
+    max-width:1600px;
+    margin:0 auto;
+   }
+
+  
+   .hero{
+       max-width:700px;
+       margin:0 auto;
+   }
+
+    h1 {
+        font-family:'Vidaloka',serif ;
+        font-weight:400;
+        font-size:72px;
+       text-align:center;
+
+   }
+   .hero img{
+     margin-top:10px;  
+    float:right;
+    width:60%;
+    height:100%;
+    max-width:100%;
+    margin-left:10px;
+    shape-outside: ellipse(25% 30%) ;
+    clip-path:ellipse(50.5% 40.5% ) ;
+    shape-margin: 3rem;
+  
+    
+    
+   }   
+   .hero1 img{
+
+    margin-top:10px;  
+    float:right;
+    width:550px;
+    height:500px;
+    max-width:75%;
+    margin-left:10px;
+    border:3px solid hsl(0, 33%, 14%);
+   } 
+
+   .clear{
+       clear: both;
+   }
+   
+   .button{
+       margin:auto;
+       text-align:center;
+       width: 150px;
+       height: 40px;
+       font-size:1rem;
+       color:hsl(0, 33%, 14%);
+       
+       background-color:transparent;
+       border:3px solid #af8281 ;
+       border-radius: 10px;
+   }
+    .button a {
+        color:hsl(0, 33%, 14%);
+        text-decoration: none;
+        text-justify: auto;
+        padding:5px;
+
+    }
+   .button:hover{
+       transform: translate(20%, 20%);
+
+   }
+   footer{
+       display:flex;
+       justify-content: space-evenly;
+       position:relative;
+       margin-top:50px;
+       margin-bottom: 0;
+       
+       background-color: #df6743;
+       color:#ffe3d6;
+
+
+   }
+   .requestform{
+       
+       padding:10px;
+       text-align: center;
+
+   }
+   .col-25 {
+       
+       padding:10px;
+       
+
+   }
+
+.formborder{
+    border:2px solid #df6743;
+    box-shadow: 2px, 5 px 6;
+
+    
+
+}
+   .button_face{
+    padding:10px;
+
+   }
+   @media screen and (min-width:650px){
+
+    body{
+
+        font-size:1.5rem;
+    }
+
+    .parent{
+        display: block;
+        justify-content: space-evenly;
+    }
+
+    main {   
+        display: block;
+        max-width:100%;
+
+    }
+
+    .hero img{
+
+        shape-margin: 6rem;
+    }
+   
+} */

@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;0,500;1,400&family=Vidaloka&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+/*stylesheet for contact page*/
+
+body {
+
+    font-size: 1rem;
+    font-family: "roboto", "san-serif";
+    font-weight: 400;
+    color: #09363f;
+    background-image: radial-gradient(#eccdbe, #997a7c);
+    align-items: center;
+}
+
+
+.container {
+    margin: 10px;
+    padding: .5rem;
+    background-image: radial-gradient(#eccdbe, #eec5c7);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+
+}
+
+header {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(#d8a4a4 30%, #af8281 70%);
+    position: relative;
+
+}
+
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+    margin: 2.5rem;
+    padding: .2rem;
+    justify-content: left;
+
+}
+
+.logo {
+    display: block;
+    justify-content: flex-start;
+    margin: 2px;
+    color: #2f1818;
+}
+
+
+nav a {
+
+    text-decoration: none;
+    margin: .5rem;
+    color: hsl(0, 33%, 14%);
+}
+
+nav li {
+    display: inline-flex;
+    padding: 0;
+
+}
+
+h1 {
+    font-family: "Vidaloka"sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.text {
+    text-align: center;
+}
+
+.contact-form {
+    width: 60vw;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, .07);
+    padding: 2em;
+    margin: 10vh;
+    background-color: #d8a4a4;
+    border-radius: 5px;
+
+}
+
+.form-group {
+    margin-bottom: 1em;
+    transition: all .4s;
+}
+
+.form-label {
+
+    font-size: 1em;
+    color: #2f1818;
+    display: block;
+    opacity: 1;
+    transform: translateY(-1.25em);
+    transform-origin: 0 0;
+    transition: all .3s;
+}
+
+.form-control {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 0px;
+    border-color: #af8281;
+    border-style: none none solid none;
+    width: 100%;
+    transition: all .5s;
+
+}
+.form-message{
+    border-color: 3px solid #2f1818;
+    border-style:  solid ;
+    transform-origin: 0 0 ;
+}
+
+.form-level{
+    display: block;
+    position: absolute;
+
+    border-color: 1px solid #2f1818;
+    transform: translateY(150rem);
+    transform-origin: 0 0 ;
+
+}
+
+
+.form-control::placeholder {
+    color: transparent;
+
+}
+
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: #2f1818;
+}
+
+.form-group:focus-within {
+
+    transform: scale(1.05, 1.05);
+}
+
+.form-control:focus+.form-label,
+.form-control:not(:placeholder-shown)+.form-label {
+
+    transform: translateY(-2.5em) scale(.8);
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 500px;
+    margin-bottom: 0;
+    background-color: #df6743;
+    color: #ffe3d6;
+
+
+}

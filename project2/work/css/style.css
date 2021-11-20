@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;0,500;1,400&family=Vidaloka&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+/*stylesheet for Portfolio page*/
+body {
+    
+    font-family: 'Roboto',"sans-serif";
+    font-weight:400;
+    font-size:1rem;
+    background-image: radial-gradient(#eccdbe, #997a7c);
+      
+    color:#09363f;
+}
+
+   
+
+.container {
+    margin: 10px;
+    padding: .5rem;
+    background-image: radial-gradient(#eccdbe, #eec5c7);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height:100%;
+
+}
+
+header {
+
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(#d8a4a4 30%, #af8281 70%);
+    position: relative;
+
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+    margin: 2.5rem;
+    padding: .2rem;
+    justify-content: left;
+
+}
+
+.logo {
+    display: block;
+    justify-content: flex-start;
+    margin: 2px;
+    padding: 10px;
+    color: hsl(0, 33%, 14%);
+}
+
+
+nav a {
+
+    text-decoration: none;
+    margin: .5rem;
+    color: hsl(0, 33%, 14%);
+}
+
+nav li {
+    display: inline-flex;
+    padding: 0;
+
+}
+
+h1 {
+    
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+
+/*main {
+    display: grid;
+    grid-gap: 1rem;
+   grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2,1fr);
+    
+
+
+}*/
+
+ h1 {
+    /*grid-column: 1/3;
+    grid-row-start: 1;*/
+    display: flex;;
+    justify-content: space-evenly;
+    justify-items: center;
+   
+    text-align: center;
+
+}
+
+.parent {
+   display: inline-flex;
+   flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+.parent h2{
+    margin:auto;
+    font-size:12vw;
+    background-image: url(../images/abstarctartforheader.png);
+    background-size:cover;
+    background-clip: text;
+    -webkit-background-clip:text;
+    color:transparent;
+    filter:drop-shadow(8px 8px 8px rgb(41, 7, 7));
+
+}
+.child{
+    display:flex;
+    flex-direction:column;
+    border:1px solid black ;
+    padding:10px;
+     margin:10px;
+
+}
+.child a{
+text-decoration: none;
+
+}
+img{
+    width:70%;
+    height:30%;
+   object-fit: cover;
+    border:3px solid hsl(0, 33%, 14%);
+    box-sizing: content-box;
+  
+
+
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative; 
+    margin-top: 50px;
+    margin-bottom: 0;
+    background-color: #df6743;
+    color: #ffe3d6;
+
+
+}
+
+@media screen and (min-width:650px){
+
+    main {   
+        display: inline-block;
+
+    }
+    body, nav{
+        font-size:2vw;
+    }
+    
+    .parent{
+
+        display:flex;
+        flex-direction:column; 
+        justify-content:space-around;
+        justify-items: center;
+
+    }
+
+    
+  .child{
+      display:flex;
+      flex-direction:row;
+      justify-content: space-evenly;
+      border:none;
+      width:80%;
+      height:25vw;
+      padding:10px;
+      
+
+  }
+  
+  .webdesign , .graphicdesign, .uxdesign, .motiongraphic {
+      width:50%;
+      height:70%;
+      padding:10px;
+  }
+.graphicdesign{
+
+    flex-direction:row-reverse;
+}
+
+  img {
+      float:left;
+      width:100%;
+      height:100%;
+  }
+  
+  .text{
+      font-size:1.5vw;
+      display:flex;
+      justify-content: space-around;
+      width:50%;
+      height:65%;
+      margin-top:10px;
+      padding: 10px;
+      border:3px solid hsl(0, 33%, 14%);
+  }
+
+                 
+
+ 
+} 
