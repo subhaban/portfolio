@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;0,500;1,400&family=Vidaloka&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+/*stylesheet for project page*/
+body {
+font-size:1rem;
+    color: #09363f;
+}
+
+.container {
+    margin:10px;
+    padding:.5rem;
+    background-image:radial-gradient(#eccdbe, #eec5c7);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    max-width:100%;
+
+}
+
+header {
+    display:flex;
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+    background-image: linear-gradient(#d8a4a4 30%, #af8281 70%);
+    position: relative;
+
+}
+
+nav ul {
+    display:inline-flex;
+    list-style: none;
+    margin: 2.5rem;
+    padding: .2rem;
+    justify-content: left;
+
+}
+
+.logo {
+    display:block;
+    justify-content:flex-start;
+    margin: 2px;
+    color: hsl(0, 33%, 14%);
+}
+
+
+nav a {
+
+    text-decoration: none;
+    margin: .5rem;
+    color: hsl(0, 33%, 14%);
+}
+
+nav li {
+    display: inline-flex;
+    padding: 0;
+
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.parent{
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+margin:20px;
+text-align: center;;
+}
+.child {
+    display: flex;
+    flex-direction:column;
+
+    
+}
+
+.thumbnail img{
+    border:1px solid black;
+width:30%;
+height:50%;
+
+}
+.para{
+    text-align: center;
+    padding-bottom:10px
+}
+
+.button a {
+text-decoration: none;
+border:1px solid hsl(0, 33%, 14%);
+color:hsl(0, 33%, 14%);
+padding:10px;
+margin:20px;
+    
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative; 
+    margin-top: 50px;
+    margin-bottom: 0;
+    background-color: #df6743;
+    color: #ffe3d6;
+
+
+}
+
+
+@media screen and (min-width:600px){
+
+    body, nav{
+        font-size:1.5vw;
+    }
+ .wrapper{
+display:flex;
+flex-direction: row;
+justify-content: space-evenly;
+
+
+
+ }
+    .parent{
+        font-size:1rem;
+        max-width:50%;
+         
+    }
+    
+     .thumbnail img{
+         width:80%;
+         height:60%;
+     }
+
+}

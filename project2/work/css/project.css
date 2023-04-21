@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;0,500;1,400&family=Rye&family=Vidaloka&display=swap');
+
+/*CSS for home,about and Contact Pages of the portfolio project*/
+* {
+    
+    box-sizing: border-box;
+
+}
+body {
+
+    font-family:"roboto",'san-serif';
+     
+     background-image: radial-gradient(#eccdbe, #997a7c);
+     color:#09363f;
+ }
+ 
+ .container {
+     margin:5px;
+     padding:.5rem;
+     background-image:radial-gradient(#eccdbe, #eec5c7);
+     background-repeat: no-repeat; 
+     background-position:center;
+     background-size:cover;  
+     height:100% ;
+     text-align:center;
+     
+    } 
+   
+ 
+    header {
+        font-family: 'Vidaloka',"sans-serif";
+        font-weight:400;
+        font-size:24px;
+        
+        margin:0;
+        width:100%;
+        display:flex;
+        
+        justify-content: space-between;
+        background-image:linear-gradient( #d8a4a4 30%,#af8281 70%);
+        position:relative;
+ 
+ }
+/* styling Logo*/
+
+.logo {
+    display: block;
+    justify-content: flex-start;
+    margin: 2px;
+    padding: 5px;
+    
+}
+
+.logo h2{ 
+    font-family:'rye','cursive';
+    font-weight:400;
+    font-size: 2rem;
+    margin:4px;
+    color:#8E1414;
+  
+}
+ /* Styling navigation*/
+
+
+nav ul {
+    display: inline-flex;
+    margin: 1.25rem;
+    padding: .5rem;
+    justify-content:start;
+
+}
+
+nav li {
+    
+    list-style: none;
+    padding: 0;
+  
+}
+
+nav a{
+    text-decoration: none;
+    margin: .5rem;
+    color:#8E1414;
+
+}
+
+
+/* H1 styling*/
+
+h1{
+    font-family: "Vidaloka", "serif";
+    font-weight: 400;
+    font-size: 10vw;
+    color:#116a7c;
+    text-align: center;
+}
+.parent{
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+margin:20px;
+padding:2px;
+border-radius: .3rem;
+box-shadow:0 3rem 3rem black;
+text-align: center;
+background-color: rgb(233, 143, 143);
+}
+.child {
+    display: flex;
+    flex-direction:column;
+    
+}
+
+.thumbnail img{
+    border:1px solid black;
+    object-fit:contain;
+width:70%;
+height:50%;
+
+}
+.para{
+    text-align:center;
+    padding:5px
+}
+
+.project-button{
+    margin:auto;
+    padding-top:10px;
+ width:40% ;
+ height:100px;
+ 
+
+
+}
+
+.project-butto a {
+text-decoration: none;
+border:1px solid hsl(0, 33%, 14%);
+color:hsl(0, 33%, 14%);
+padding:10px;
+margin:10px;
+
+    
+}
+.project-butto:hover{
+    
+     transform:scale(1.2);
+     
+     
+ }
+
+
+ footer{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    position:relative;
+    margin-top:50px;
+    margin-bottom: 10px;
+    background-color: #df6743;
+    color:#ffe3d6;
+}
+
+.icons {
+    margin:auto;
+    padding-bottom:5px;
+    padding:5px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    width:40px;
+    
+    
+    
+}
+
+
+
+
+@media screen and (min-width:650px){
+
+    body,nav{
+        font-size:2vw;
+    }
+ .project-wrapper{
+display:flex;
+flex-direction: row;
+justify-content: space-evenly;
+
+
+
+ }
+    .parent{
+        font-size:1vw;
+        max-width:50%;
+         
+    }
+    
+     .thumbnail img{
+         width:80%;
+         height:60%;
+         object-fit: cover;
+     }
+
+}
